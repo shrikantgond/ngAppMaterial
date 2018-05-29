@@ -1,0 +1,25 @@
+<!-- This is a sample text for the dialogs
+
+{{data.name}} 
+<div>
+    whats your fav animal ?
+    <mat-form-field>
+        <input matInput [(ngModel)]="data.animal" placeholder="What's your name?">
+      </mat-form-field>
+</div> -->
+
+
+<h2 mat-dialog-title>Add Group</h2>
+<mat-dialog-content>
+  <form #modalForm="ngForm">
+    <div>
+        <mat-form-field>
+            <input matInput #selectedValue [(ngModel)]="data.animal" placeholder="What's your name?">
+          </mat-form-field>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>cancel</button>
+  <button mat-button [mat-dialog-close]="selectedValue.value">save</button>
+</mat-dialog-actions>

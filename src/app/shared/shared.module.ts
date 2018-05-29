@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatAutocompleteModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+// tslint:disable-next-line:max-line-length
+import { MatAutocompleteModule, MatFormFieldModule, MatInputModule, MatCardModule, MatCheckboxModule, MatRadioModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, MatIconModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatButtonModule, MatSidenavModule, MatToolbarModule, MatListModule, MatStepperModule, MatTabsModule, MatButtonToggleModule, MatChipsModule, MatExpansionModule, MatGridListModule, MatProgressSpinnerModule, MatProgressBarModule, MatDialogModule, MatSnackBarModule, MatTooltipModule, MatPaginatorModule, MatTableModule, MatSortModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+// import { MatTreeModule } from '@angular/material/tree';
 
 // TODO: Do declare all components, directives, and pipes in the SharedModule.
 
@@ -9,12 +12,71 @@ import { MatAutocompleteModule, MatFormFieldModule, MatInputModule } from '@angu
     CommonModule,
     MatAutocompleteModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatIconModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatButtonToggleModule,
+    MatChipsModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSortModule,
+    HttpClientModule
+    // MatTreeModule
   ],
   exports: [
     MatAutocompleteModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatIconModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatButtonToggleModule,
+    MatChipsModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSortModule,
+    HttpClientModule
   ],
   declarations: []
 })

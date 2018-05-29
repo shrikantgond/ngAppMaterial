@@ -1,0 +1,54 @@
+<div>
+  <mat-form-field class="example-full-width">
+    <input matInput [matDatepicker]="picker1" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker touchUi="true" #picker1></mat-datepicker>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field class="example-full-width">
+    <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker2" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2></mat-datepicker>
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Input & change events"
+           (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+  <div class="example-events">
+    <div *ngFor="let e of events">{{e}}</div>
+  </div>
+  
+</div>
+
+<div>
+  <p>
+    <mat-form-field>
+      <input matInput [matDatepicker]="dp1" placeholder="Completely disabled" disabled>
+      <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+      <mat-datepicker #dp1></mat-datepicker>
+    </mat-form-field>
+  </p>
+  
+  <p>
+    <mat-form-field>
+      <input matInput [matDatepicker]="dp2" placeholder="Popup disabled">
+      <mat-datepicker-toggle matSuffix [for]="dp2" disabled></mat-datepicker-toggle>
+      <mat-datepicker #dp2></mat-datepicker>
+    </mat-form-field>
+  </p>
+  
+  <p>
+    <mat-form-field>
+      <input matInput [matDatepicker]="dp3" placeholder="Input disabled" disabled>
+      <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+      <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+    </mat-form-field>
+  </p>
+  
+</div>
