@@ -1,0 +1,95 @@
+
+<mat-drawer-container class="sidenav-container" autosize>
+  <mat-drawer #drawer class="sidenav-drawer" [(opened)]="navigationService.IsSidenavOpen" mode="push">
+    
+    <mat-nav-list>
+      <a mat-list-item routerLink="form-controls/autocomplete" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>home</mat-icon> <p class="list-item"> autocomplete </p> <span class="spacer"></span> <p class="badge">233</p>
+      </a> 
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/checkbox" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>account_box</mat-icon> <p class="list-item"> checkbox </p> <span class="spacer"></span><p class="badge">23</p>
+      </a>  
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/datepicker" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>book</mat-icon> <p class="list-item"> datepicker </p> <span class="spacer"></span><p class="badge">5</p>
+      </a> 
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/formfields" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>library_books</mat-icon> <p class="list-item"> formfields </p> <span class="spacer"></span><p ></p>
+      </a>  
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/input" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>local_cafe</mat-icon> <p class="list-item"> input </p> <span class="spacer"></span><p class="badge">78</p>
+      </a>  
+      <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/radio" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> radio </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/select" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> select </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/slider" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> slider </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="form-controls/slide" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> slide </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/menu" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> menu </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/sidenav" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> sidenav </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/toolbar" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> toolbar </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/card" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> card </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/list" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> list </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/stepper" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> stepper </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/tabs" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> tabs </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/expansion-panel" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> expansion-panel </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="layout/grid" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> grid </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="buttons-indicators/spinnerprogress" (click)="navigationService.IsSidenavOpen=false;" >
+        <mat-icon>exit_to_app</mat-icon> <p> spinnerprogress </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="buttons-indicators/progressbar" >
+        <mat-icon>exit_to_app</mat-icon> <p> progressbar </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="popups-modals/dialog" >
+        <mat-icon>exit_to_app</mat-icon> <p> dialog </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="popups-modals/snackbar" >
+        <mat-icon>exit_to_app</mat-icon> <p> snackbar </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="popups-modals/tooltip" >
+        <mat-icon>exit_to_app</mat-icon> <p> tooltip </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="datatable/paginator" >
+        <mat-icon>exit_to_app</mat-icon> <p> paginator </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="datatable/table" >
+        <mat-icon>exit_to_app</mat-icon> <p> table </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+      <a mat-list-item routerLink="datatable/table-http" >
+        <mat-icon>exit_to_app</mat-icon> <p> table-http </p> <span class="spacer"></span>
+      </a>  <mat-divider></mat-divider>
+
+      <mat-divider></mat-divider>
+    </mat-nav-list>
+
+  </mat-drawer>
+
+</mat-drawer-container>

@@ -1,0 +1,23 @@
+.sidenav-container{
+    position: static;
+    min-height: 100%;
+    width: 100%;
+}
+
+.sidenav-drawer{
+    min-width: 280px;
+}
+
+.mat-nav-list{
+    padding: 6px;
+  }
+
+mat-nav-list p{
+    padding-left: 8px;
+    /* padding-top: 4px; */
+    font-size: 14px;
+}
+
+.badge{
+    color:  darkgray;
+}

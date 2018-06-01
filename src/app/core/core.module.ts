@@ -7,15 +7,23 @@ import { LoggerService } from './logger.service';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { SharedModule } from '../shared/shared.module';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { NavigationService } from './navigation.service';
+import { AppRoutingModule } from '../app-routing.module';
 
 // TODO: Onlly import this module in AppModule
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    AppRoutingModule
   ],
-  declarations: [SpinnerComponent, DashboardComponent],
-  providers: [ExceptionService, LoggerService]
+  exports: [DashboardComponent, SidenavComponent, ToolbarComponent],
+  declarations: [SpinnerComponent, DashboardComponent, SidenavComponent, ToolbarComponent],
+  providers: [ExceptionService, LoggerService, NavigationService]
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
