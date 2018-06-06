@@ -12,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { NavigationService } from './navigation.service';
 import { AppRoutingModule } from '../app-routing.module';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 // TODO: Onlly import this module in AppModule
 
@@ -21,8 +22,8 @@ import { AppRoutingModule } from '../app-routing.module';
     SharedModule,
     AppRoutingModule
   ],
-  exports: [DashboardComponent, SidenavComponent, ToolbarComponent],
-  declarations: [SpinnerComponent, DashboardComponent, SidenavComponent, ToolbarComponent],
+  exports: [DashboardComponent, SidenavComponent, ToolbarComponent, BreadcrumbComponent],
+  declarations: [SpinnerComponent, DashboardComponent, SidenavComponent, ToolbarComponent, BreadcrumbComponent],
   providers: [ExceptionService, LoggerService, NavigationService]
 })
 export class CoreModule {
